@@ -31,11 +31,11 @@ API_KEY = 'AIzaSyC3jD7VxbwGNAC1zBY_X9tlyS98mkSk9yg'
 service = build('fusiontables', 'v1', developerKey=API_KEY)
 
 # This is the table id for the fusion table
-TABLE_ID = '1VlPiBCkYt_Vio-JT3UwM-U__APurJvPb6ZEJPg'
+TABLE_ID = '1zyPC-ucV6gCmd8vKGsnF3-5WMVBbfDZmodscDUFc'
 
 # This is the default columns for the query
 query_cols = []
-query_values = ['Forlan'] #Change to be the value(s) you're querying in the column you've specified
+query_values = ['AC Gilchrist'] #Change to be the value(s) you're querying in the column you've specified
 
 # Import the Flask Framework
 from flask import Flask, request
@@ -49,8 +49,8 @@ def get_all_data(query):
     #logging.info(response['rows'])
     
     response = service.query().sql(sql=query).execute()
-    logging.info(response['columns'])
-    logging.info(response['rows'])
+    #logging.info(response['columns'])
+    #logging.info(response['rows'])
     return response
 
 # make a query given a set of columns to retrieve
@@ -71,7 +71,7 @@ def make_query(cols, values, limit):
     string_values = string_values[2:len(string_values)]
     
     #Change this query to have your corresponding column (in our soccer example, the column for our WHERE is Scorer).
-    query = "SELECT " + string_cols + " FROM " + TABLE_ID + " WHERE Scorer = '" + string_values + "'"
+    query = "SELECT " + string_cols + " FROM " + TABLE_ID 
 
     query = query + " LIMIT " + str(limit)
 
@@ -87,7 +87,7 @@ def make_query(cols, values, limit):
 def index():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
     request = service.column().list(tableId=TABLE_ID)
-    res = get_all_data(make_query([], query_values, 5)) #5 is our limit we're passing in
+    res = get_all_data(make_query([], query_values, 15)) #5 is our limit we're passing in
     logging.info('allheaders')
     return template.render(columns=res['columns'], rows = res['rows'] )
 
