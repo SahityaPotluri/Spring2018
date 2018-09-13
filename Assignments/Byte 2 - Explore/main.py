@@ -24,14 +24,14 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     autoescape=True)
 
 # This API key is provided by google as described in the tutorial
-API_KEY = 'AIzaSyBxERccrjcRadPcW7LHbEdqH9Q2yu5GPj4'
+API_KEY = 'AIzaSyC3jD7VxbwGNAC1zBY_X9tlyS98mkSk9yg'
 
 # This uses discovery to create an object that can talk to the 
 # fusion tables API using the developer key
 service = build('fusiontables', 'v1', developerKey=API_KEY)
 
 # This is the table id for the fusion table
-TABLE_ID = 'AIzaSyBxERccrjcRadPcW7LHbEdqH9Q2yu5GPj4'
+TABLE_ID = '1VlPiBCkYt_Vio-JT3UwM-U__APurJvPb6ZEJPg'
 
 # This is the default columns for the query
 query_cols = []
