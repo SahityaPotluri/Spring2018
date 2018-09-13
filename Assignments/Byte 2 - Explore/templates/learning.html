@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>About This Data</title>
+    <title>Learnings from the Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,9 +35,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
-            <li  class="active"><a href="about">About This Data Set</a></li>
-	    	<li>  <a href="quality">Data Quality</a></li>
-            <li> <a href="learning">Learnings</a></li>
+             <li><a href="about">About This Data Set</a></li>
+	    	<li> <a href="quality">Data Quality</a></li>
+            <li  class="active"><a href="learning">Learnings</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -47,29 +47,21 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Accountability: About This Data Set</h1>
-        <p>The dataset represents information about Wicket Keepers in Cricket. More specifically,
-        it describes the number of dismissals they scored over their career. Each player has certain attributes namely, 
-        Span (the number of years the player was active), MatchCount (the number of matches he had 
-        played in), Dismissals (the number of wickets he had taken), Catches (the number of dismissals through catches), 
-        Stumpings (the number of dismissals through stumpings). The entries presented in  the table
-        are ranked high to low in the number of dismissals.</p>
+	<h1>Learnings from exploratory analysis</h1>
+        <p><font size="5.5">In this project, I performed exploratory analysis on a dataset collected from ESPN website.
+        I evaluated this dataset for the four core properties of Data Quality: 
+        Completeness, Coherence, Correctness and Accountability. I am summarizing my findings hereunder.</br> 
+        </br></font>
+       
+       <font size="5">
+        <b> <font size="5">Completeness:</b></font> No missing values found. Aptly answers my questions. </br>
+        <b><font size="5"> Coherence:</b></font> Dismissals = Catches + Stumpings. Type of the values match the expectation. </br>
+        <b><font size="5"> Correctness:</b></font> No source of bias in the data. In most cases, there is digital evidence available that 
+        can corroborate this data.</br>
+        <b><font size="5"> Accountable:</b></font> ESPN is a credible organization that provides upto date information about cricket. 
+        The dataset can also be verified from news articles or by contacting the cricket organizations of various
+        countries.</br> </font></p>
       </div>
-
-    
-      <div class="page-header">
-	<h2>Where did this data come from?</h2>
-	<p><font size = "4.5"> I collected this dataset from the 
-		<a href="http://stats.espncricinfo.com/ci/content/records/283796.html">ESPN CricInfo</a>
-		page, which is in an authentic website for information pertaining to Cricket.</font></p>
-      </div>
-      
-      <div class="page-header">
-	<h2>Who has access to it?</h2>
-	<p><font size = "4.5">This dataset is accessible to public with the read permissions.
-	The write permissions are solely held by the ESPN organization.</font></p>
-      </div>
-
 
     </div> <!-- /container -->
 
