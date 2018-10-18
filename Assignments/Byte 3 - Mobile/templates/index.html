@@ -45,10 +45,10 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1><font size = "10.0">How active is Sahitya's lifestyle?</h1>
-        <p>This website presents a visual narrative of mobile data collected through <a href="http://www.awareframework.com/introduction-of-aware-ios-client/">Aware iOS Client</a>. 
+        <p>This website presents a visual narrative of mobile data created using Tableau and collected through <a href="http://www.awareframework.com/introduction-of-aware-ios-client/">Aware iOS Client</a>. 
         The following bar graph depicts the lifestyle of a user named Sahitya. 
-        The data is collected for over a period of 7 days starting from 10/10/2018 to 10/17/2018. Specifically, the table 'plugin_ios_activity_recognition' 
-        is used to collect meaningful information related to the lifestyle of the user.
+        The data is collected for a period of 8 days starting from 10/10/2018 to 10/17/2018. Specifically, 
+        the table 'plugin_ios_activity_recognition' is used to collect meaningful information related to the day-to-day activity types of the user.
         </p>
       </div>
       
@@ -134,8 +134,9 @@ vizElement.parentNode.insertBefore(scriptElement, vizElement);
         <p>
         The above bar chart represents the distribution of various activities of the user on each day for a duration of 8 days. The data has four different kinds of meaningful
         activities, namely 'stationary', 'walking', 'running', 'automotive'. It is easily observable that the user has sedentary lifestyle with 'stationary' being the state for
-        a large amount of time, even excluding the time for which the user sleeps, for about a third of each day. Since the sensor collects data about the activity type every 60 seconds, 
-        it makes sense to look at the distribution across various activities rather than the absolute numbers.
+        a large amount of time (even by excluding the time for which the user sleeps which accounts to about a third of each day). Since the sensor collects data about the activity type every 60 seconds, 
+        it makes sense to look at the distribution across various activities rather than the absolute numbers. Hence I chose bar chart over line graphs. I could have as well chosen a pie-chart that shows the
+        distribution on each day but it would take 8 different graphs to show the distribution for 8 days. So bar graph seemed a more intuitive visualization narrative to represent the distribution.
         </p>
       </div>
       </div>
