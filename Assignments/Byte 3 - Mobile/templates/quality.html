@@ -46,27 +46,30 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+<p>The data is collected through <a href="http://www.awareframework.com/introduction-of-aware-ios-client/">Aware iOS Client</a>, an authentic source for collecting the data from the mobile sensors.
+</p>
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p><font size="4.5"/>No. The data is not complete. There are few missing values in some of the tables. Specifically, the table used to plot the narrative 'plugin_ios_activity_recognition' 
+	has certain values missing in the activity_name column of the table. I cleaned the data by dropping the rows that do not contain the values. Since the frequency of the sensor capturing the data pertaining to activity is very high, dropping some of the rows would
+	not skew the analysis we draw. </p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p><font size="4.5"/>Yes. The data is coherent. From my lifestyle, I would expect the distribution of activity
+	to be highly skewed towards 'stationary'. The trends observed in other tables is also coherent and aligns with my expectations. For example, the location table has my location mostly concentrated around GHC
+	where I spent most of my time.</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+    <p><font size = "4.5">Yes. The data is correct. I verified this from three factors: 1) The entries in the dataset do not require a subjective evaluation, thereby reducing 
+	human bias or error 2) The sensors collect data very frequently and hence on an average, the data collected should be representative of the underlying true distribution  3) Since the data collected is about myself, I could validate the data to
+	know if the actual values are similar to the observed ones. </p>
       </div>
 
     </div> <!-- /container -->

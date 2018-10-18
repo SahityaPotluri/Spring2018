@@ -44,8 +44,12 @@
       
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Interactive Data Science Project Exploratory Analysis Byte Example</h1>
-        <p>This is the Exploratory Analysis Byte of the Interactive Data Science class.</p>
+	<h1><font size = "10.0">How active is Sahitya's lifestyle?</h1>
+        <p>This website presents a visual narrative of mobile data collected through <a href="http://www.awareframework.com/introduction-of-aware-ios-client/">Aware iOS Client</a>. 
+        The following bar graph depicts the lifestyle of a user named Sahitya. 
+        The data is collected for over a period of 7 days starting from 10/10/2018 to 10/17/2018. Specifically, the table 'plugin_ios_activity_recognition' 
+        is used to collect meaningful information related to the lifestyle of the user.
+        </p>
       </div>
       
       <div class="page-header">
@@ -95,7 +99,46 @@ div.tooltip {
 }
 /* End styles for bar chart*/
 </style>
+<div class='tableauPlaceholder' id='viz1539886847743' style='position: relative'><noscript><a href='#'>
+<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_Sahitya&#47;Sheet1&#47;1_rss.png' style='border: none' /></a>
+</noscript>
+<object class='tableauViz'  style='display:none;'>
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+<param name='embed_code_version' value='3' /> 
+<param name='site_root' value='' />
+<param name='name' value='Book1_Sahitya&#47;Sheet1' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_Sahitya&#47;Sheet1&#47;1.png' /> 
+<param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='filter' value='publish=yes' />
+</object>
+</div>                
+<script type='text/javascript'>                    
+var divElement = document.getElementById('viz1539886847743');                    
+var vizElement = divElement.getElementsByTagName('object')[0];                    
+vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
 
+    <height ="60">
+    <div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+	<h2><font size = "6.0">Explanation of the above narrative</h2>
+        <p>
+        The above bar chart represents the distribution of various activities of the user on each day for a duration of 8 days. The data has four different kinds of meaningful
+        activities, namely 'stationary', 'walking', 'running', 'automotive'. It is easily observable that the user has sedentary lifestyle with 'stationary' being the state for
+        a large amount of time, even excluding the time for which the user sleeps, for about a third of each day. Since the sensor collects data about the activity type every 60 seconds, 
+        it makes sense to look at the distribution across various activities rather than the absolute numbers.
+        </p>
+      </div>
+      </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -104,12 +147,14 @@ div.tooltip {
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script>
     $( document ).ready(function() {
+    	
+    	
 	
 		/* Start date/time hover graph code
 		*/
 		
 		// Set the dimensions of the canvas / graph
-		var margin = {top: 30, right: 20, bottom: 30, left: 50},
+		/*var margin = {top: 30, right: 20, bottom: 30, left: 50},
 		    width = 600 - margin.left - margin.right,
 		    height = 270 - margin.top - margin.bottom;
 		
@@ -193,7 +238,7 @@ div.tooltip {
 		    svg.append("g")
 		        .attr("class", "y axis")
 		        .call(yAxis);
-		});
+		});*/
 		//End date/time hover graph
 		
 
